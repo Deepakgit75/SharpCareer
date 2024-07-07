@@ -5,7 +5,7 @@ import { MdOutlineLocationOn, MdMailOutline } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://sharpcareer-1.onrender.com/api";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
