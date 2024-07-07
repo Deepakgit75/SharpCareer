@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://sharpcareer-1.onrender.com/api";
 
 const Book = () => {
   const [name, setName] = useState("");
