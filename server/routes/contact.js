@@ -4,10 +4,10 @@ const ContactMessage = require('../models/ContactMessage');
 
 router.post('/', async (req, res) => {
 
-  const { name, email, phone, service, message } = req.body;
+  const { name, email, phone, message } = req.body;
   
   try {
-    const newMessage = new ContactMessage({ name, email, phone, service, message });
+    const newMessage = new ContactMessage({ name, email, phone,  message });
     console.log(newMessage)
     await newMessage.save();
     res.status(201).send('Message sent successfully');

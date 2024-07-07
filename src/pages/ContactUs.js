@@ -11,14 +11,13 @@ const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [service, setService] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Send the form data to the server using fetch API
 
-    if (!name || !email || !phone || !service || !message) {
+    if (!name || !email || !phone || !message) {
       alert("Please fill all fields");
       return;
     }
@@ -29,7 +28,7 @@ const ContactUs = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, phone, service, message }),
+        body: JSON.stringify({ name, email, phone, message }),
       });
 
       if (response.ok) {
@@ -37,7 +36,6 @@ const ContactUs = () => {
         setName("");
         setEmail("");
         setPhone("");
-        setService("");
         setMessage("");
       } else {
         alert("Failed to send message");
