@@ -6,7 +6,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import toast from "react-hot-toast";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://sharpcareer-1.onrender.com/api";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
