@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import toast from "react-hot-toast";
 
 const API_URL = "http://localhost:5000/api";
 
@@ -14,7 +15,7 @@ const Book = () => {
     e.preventDefault();
 
     if (!name || !email || !phone || !service) {
-      alert("Please fill all fields");
+      toast.error("Please fill all fields");
       return;
     }
 
@@ -28,7 +29,7 @@ const Book = () => {
       });
 
       if (response.ok) {
-        alert("Booking confirmed");
+        toast.success("Booking confirmed");
         setName("");
         setEmail("");
         setPhone("");
@@ -38,7 +39,7 @@ const Book = () => {
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred");
+      toast.error("An error occurred");
     }
   };
 

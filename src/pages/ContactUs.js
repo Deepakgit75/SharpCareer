@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { MdOutlineLocationOn, MdMailOutline } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const API_URL = "http://localhost:5000/api";
 
@@ -18,7 +19,7 @@ const ContactUs = () => {
     // Send the form data to the server using fetch API
 
     if (!name || !email || !phone || !message) {
-      alert("Please fill all fields");
+      toast.error("Please fill all fields");
       return;
     }
 
@@ -32,17 +33,17 @@ const ContactUs = () => {
       });
 
       if (response.ok) {
-        alert("Message sent successfully");
+        toast.success("Message sent successfully");
         setName("");
         setEmail("");
         setPhone("");
         setMessage("");
       } else {
-        alert("Failed to send message");
+        toast.error("Failed to send message");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred");
+      toast.error("An error occurred");
     }
   };
 

@@ -7,6 +7,7 @@ import ServiceDetail from './pages/ServiceDetail';
 import Services from './pages/Services';
 import ThemeToggle from './ThemeToggle';
 import Book from './pages/Book';
+import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <Toaster position="top-center" />
       {/* <ThemeToggle theme={theme} toggleTheme={toggleTheme} /> */}
       <Routes>
         <Route exact path="/" element={<Home />} />
