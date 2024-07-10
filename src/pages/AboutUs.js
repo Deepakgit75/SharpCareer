@@ -39,7 +39,7 @@ const AboutUs = () => {
             <h2 className='font-medium text-xl p-2'>Licensed Technicians</h2>
             <p className='text-center px-5'>Our technicians are capable of dealing with home appliances of any type and manufacturer. We have all the necessary and <span className='font-semibold'>up-to-date certifications</span>.</p>
           </div>
-        </div
+        </div>
         </section>
       <Footer />
     </div>
