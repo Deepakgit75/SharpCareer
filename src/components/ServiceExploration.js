@@ -12,9 +12,8 @@ const ServiceExploration = () => {
         </div>
 
         <div className="flex-1">
-          <h2 className="text-4xl left-10  w-[60%] font-bold mb-4">
-            Explore our 
-            <span className="text-green-600"> Services</span>
+          <h2 className="text-4xl left-10  w-[60%] text-blue-950 font-bold mb-4">
+            Explore our <span className="text-green-600"> Services</span>
           </h2>
           <a
             href="/services"
@@ -30,13 +29,9 @@ const ServiceExploration = () => {
         What's includes
       </h1>
       <div className="w-full h-full mt-2 flex flex-col bg-blue-100 items-center justify-start pt-10 ">
-        <div className="w-[95%] sm:w-[80%]  gap-14 ">
-          <div className="w-full flex lg:h-80 gap-2  lg:gap-20 lg:flex-row">
-              <img
-                src={ac}
-                alt=""
-                className=" mr-20 object-fill bg-white justify-start w-auto h-80 hover:opacity-50"
-              />
+        <div className="w-[95%] sm:w-[80%] gap-14 ">
+          <div className="w-full flex flex-row-reverse lg:h-80 gap-10 lg:gap-20 lg:flex-row">
+              
             <div className="lg:w-6/12 xl:w-5/12 lg:h-full flex flex-col items-center lg:items-start justify- gap-6 lg:gap-1">
               <div className="flex flex-col  lg:items-start lg:h-[75%] gap-6">
                 <h4 className="text-black font-bold text-3xl mt-10 ">
@@ -48,6 +43,13 @@ const ServiceExploration = () => {
                   waiting.
                 </p>
               </div>
+            </div>
+            <div>
+              <img
+                src={ac}
+                alt=""
+                className="ml-32 object-fill bg-white justify-start w-auto h-80"
+              />
             </div>
           </div>
         </div>

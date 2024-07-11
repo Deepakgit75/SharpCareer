@@ -92,7 +92,7 @@ const Hero = () => {
                     <dt className="inline font-semibold  text-blue-950 ">
                       Mission{" "}
                     </dt>{" "}
-                    <dd class="inline">
+                    <dd className="inline">
                       {" "}
                       To create encore experiences that customers can't wait to
                       share with others.
@@ -109,7 +109,7 @@ const Hero = () => {
                     </dd>
                   </div>
                   <div className="relative pl-9">
-                    <dt class="inline font-semibold text-blue-950 ">
+                    <dt className="inline font-semibold text-blue-950 ">
                       Code of Values{" "}
                     </dt>
                     <dd className="inline">
@@ -122,16 +122,12 @@ const Hero = () => {
                 </dl>
               </div>
             </div>
-
             <div>
-              <h1 className="mt-16    text-3xl font-bold tracking-tight text-blue-950  sm:text-4xl "></h1>
-              <a href="">
                 <img
                   src={imageImg}
                   alt=""
-                  className=" mr-20 object-fill bg-blue-50 justify-start w-auto h-96 "
+                  className=" mr-20 mt-20 object-fill bg-blue-50 justify-start w-auto h-96 "
                 />
-              </a>
             </div>
           </div>
         </div>
