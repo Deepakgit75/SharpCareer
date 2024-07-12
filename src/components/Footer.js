@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className=" bg-gradient-to-b from-blue-200 text-black">
+    <footer className=" bg-gradient-to-b from-blue-200 flex flex-col  text-black">
       <div className='text-black pl-11 pt-4 text-left font-bold text-xl'>
        ServicePros
       </div>
-      <div className='flex flex-row '>
+      <div className='flex lg:flex-row justify-center items-center flex-col'>
         <div className='flex justify-center items-center'>
           <ul className='flex flex-row mx-10 space-x-6 text-xl justify-center items-center'>
             <li className='hover:text-blue-700'> <FaFacebook /></li>
@@ -18,15 +18,14 @@ const Footer = () => {
             <li className='hover:text-green-600'> <FaWhatsapp /> </li>
           </ul>
         </div>
-        <div className='ml-auto mr-10'>
-          <div className="flex flex-row  justify-end space-x-28 ">
+        <div className='ml-auto  mr-10'>
+          <div className="flex lg:flex-row flex-col justify-end space-x-28 ">
             <ul className='text-black space-y-3 p-2 mb-2 text-lg font-semibold'>Our Services 
               <li className="font-normal text-base"> <Link to={"/services/ac-repair"}> AC Repairing </Link> </li>
               <li className="font-normal text-base"> <Link to={"/services/refrigerator-service"}> Refrigerator</Link> </li>
               <li className="font-normal text-base"> <Link to={"/services/washing-machine-service"} > Washing Machine</Link> </li>
               <li className="font-normal text-base"> <Link to={"/services/led-service"} > LED Service</Link> </li>
             </ul>
-            
             <ul className='text-black space-y-3 p-2 mb-2 text-lg font-semibold'>Follow Us
               <li className="font-normal text-base ">Facebook</li>
               <li className="font-normal text-base">Twitter</li>

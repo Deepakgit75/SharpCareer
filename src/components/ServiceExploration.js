@@ -6,7 +6,7 @@ import ac from "../assets/Ac-repairing.jpeg";
 const ServiceExploration = () => {
   return (
     <section className="py-10 px-5 bg-blue-100 ">
-      <div className="container mx-auto  flex items-center justify-center">
+      <div className="container mx-auto  flex items-center flex-col lg:flex-row justify-center">
         <div className="flex-1 p-6 w-full px-10 ">
           <img className="w-auto h-96 " src={service} alt="Explore Services" />
         </div>
@@ -30,9 +30,9 @@ const ServiceExploration = () => {
       </h1>
       <div className="w-full h-full mt-2 flex flex-col bg-blue-100 items-center justify-start pt-10 ">
         <div className="w-[95%] sm:w-[80%] gap-14 ">
-          <div className="w-full flex flex-row-reverse lg:h-80 gap-10 lg:gap-20 lg:flex-row">
+          <div className="w-full flex md:flex-col lg:flex-row lg:h-80 gap-10 lg:gap-20 flex-col">
               
-            <div className="lg:w-6/12 xl:w-5/12 lg:h-full flex flex-col items-center lg:items-start justify- gap-6 lg:gap-1">
+            <div className="lg:w-6/12 xl:w-5/12 lg:h-full flex flex-col items-center lg:items-start  gap-6 lg:gap-1">
               <div className="flex flex-col  lg:items-start lg:h-[75%] gap-6">
                 <h4 className="text-black font-bold text-3xl mt-10 ">
                   Unlimited conversations with Appliance Technicians
@@ -48,7 +48,7 @@ const ServiceExploration = () => {
               <img
                 src={ac}
                 alt=""
-                className="ml-32 object-fill bg-white justify-start w-auto h-80"
+                className="lg:ml-32 object-fill bg-white justify-start w-auto h-80"
               />
             </div>
           </div>
